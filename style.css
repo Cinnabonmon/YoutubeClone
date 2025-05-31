@@ -55,10 +55,11 @@ nav {
 /* control button display */
 .search button {
   margin-left: 0;
-  border: solid 1px gray;
+  border: solid 1px rgb(163, 160, 160);
   border-radius: 0 20px 20px 0;
-  background-color: rgba(6, 6, 6, 0);
+  background-color: rgba(82, 79, 79, 0.897);
   height: 37px;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,6 +114,33 @@ input:focus {
 /* control border on account image */
 .account img {
   border-radius: 50%;
+}
+/* side navigation display set-up */
+.side-nav {
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  font-size: .7rem;
+  color: white;
+  margin: 0;
+}
+/* sizing of side navigation bar svg  */
+.side-nav svg {
+  width: 20px;
+  height: 20px;
+  margin: 10px auto;
+  color: white;
+}
+/* control list style */
+.side-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px 0;
+  margin: 40px 0 0 0;
+  padding: 0;
 }
 
 
