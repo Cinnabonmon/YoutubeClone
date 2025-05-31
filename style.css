@@ -4,65 +4,66 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(5, 5, 5, 0.879);
 }
-
+/* control nav bar dimensions */
 .nav-bar {
   height: 60px;
   width: 100%;
 }
-
+/* display of the navigation items */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.line {
-  width: 15px;
-  height: 1px;
-  background-color: white;
-  padding: .5px;
-  margin: 3px;
-  margin-left: 15px;
-  padding: 2px auto;
+/* make left side items stay put */
+.left-side {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 40vw;
+}
+/* box for the navigation bar button */
+.side-but {
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+/* control svg image */
+.side-but svg {
+  height: 37px;
+  margin-left: 10px;
+  color: white;
+  width: 100%;
 }
 
+/* image control */
 .nav-bar img {
   object-fit: cover;
 }
-
-.logo {
-  width: 30%;
-}
-
+/* round corners on logo image */
 .logo img {
   border-radius: 10px;
 }
-
-.account {
-  margin: 10px 20px;
-}
-.account img {
-  border-radius: 50%;
-}
-
+/* put search bar and search button side by side */
 .search {
   display: inline-flex;
   align-items: center;
   margin-right: 20px;
 }
-
+/* control button display */
 .search button {
   margin-left: 0;
   border: solid 1px gray;
   border-radius: 0 20px 20px 0;
   background-color: rgba(6, 6, 6, 0);
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.search svg {
-  color: white;
-}
-
+/* control search input display */
 .search input {
   margin-right: 0;
   padding-right: 0;
@@ -73,26 +74,15 @@ nav {
   background-color: rgba(5, 5, 5, 0.011);
   color: white;
 }
-
+/* increase font size for placeholder for search */
 input[placeholder="Search"] {
   padding-left: 15px;
   font-size: 20px;
-
 }
-
+/* remove outline when clicking on search bar and add border to allow user to see they are searching */
 input:focus {
   outline: none;
   border: 2px solid rgba(22, 22, 174, 0.779);
-}
-
-.create-but {
-  width: 80px;
-  height: 37px;
-  border-radius: 20px;
-  background-color: rgb(55, 55, 59);
-  border: none;
-  color: white;
-  font-weight: bold;
 }
 
 /* Hide the clear (x) button in Chrome, Safari, Edge */
@@ -106,4 +96,23 @@ input:focus {
 .search input[type="search"]::-ms-clear {
   display: none;
 }
+/* manipulate the create button display */
+.create-but {
+  width: 80px;
+  height: 37px;
+  border-radius: 20px;
+  background-color: rgb(55, 55, 59);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+/* move account image away from the edge */
+.account {
+  margin: 14px 20px;
+}
+/* control border on account image */
+.account img {
+  border-radius: 50%;
+}
+
 
