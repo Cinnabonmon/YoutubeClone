@@ -71,7 +71,7 @@ nav {
   height: 37px;
   width: 300px;
   border-radius: 20px 0 0 20px;
-  border: 1px solid gray;;
+  border: 1px solid gray;
   background-color: rgba(5, 5, 5, 0.011);
   color: white;
 }
@@ -120,7 +120,7 @@ input:focus {
   position: fixed;
   width: 80px;
   height: 100%;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: white;
   margin: 0;
 }
@@ -142,5 +142,3 @@ input:focus {
   margin: 40px 0 0 0;
   padding: 0;
 }
-
-
